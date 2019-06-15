@@ -1,8 +1,8 @@
 
-	<h1>A compilação deve ser feita com o comando make.</h1>
+	A compilação deve ser feita com o comando make.
 
-	<h3>Exemplo:</h3>
+	Exemplo:
 
-	<strong>make</strong>
+	make
 	
-	<h3>Pronto!</h3>
+	Pronto!
