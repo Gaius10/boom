@@ -1,10 +1,13 @@
 #include <stdio.h>
-#include <gui.h>
-#include <logica.h>
+#include "libs/gui.h"
+#include "libs/logica.h"
+#include "libs/draws.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
     // Mostrar tela de escolha do tamanho do tabuleiro
+    telaInicial(&argc, argv);
+    
     // Captar regiao do clique e gerar tabuleiro (Parte lógica)
     // Mostrar tabuleiro
     
@@ -18,7 +21,7 @@ int main(void)
     
     // [Ao fim do jogo]
 	// No caso de quebra de records, salvar dados do jogador num ranking e 
-	//	dados da partida
+	// dados da partida
 	
     return 0;
 }

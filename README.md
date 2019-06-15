@@ -1,10 +1,8 @@
 
-	A compilação deve ser feita com o comando:
+	<h1>A compilação deve ser feita com o comando make.</h1>
 
-	gcc -o <arquivo_de_saida> <arquivo_fonte> -lglut -lGL -lGLU -lm
+	<h3>Exemplo:</h3>
 
-	Exemplo
-
-	gcc -o batata main.c -lglut -lGL -lGLU -lm
-
-
+	<strong>make</strong>
+	
+	<h3>Pronto!</h3>
