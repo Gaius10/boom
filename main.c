@@ -3,12 +3,18 @@
 #include "libs/logica.h"
 #include "libs/draws.h"
 
+typedef struct
+{
+    int status = 0;
+
+} Jogo;
+
 int main(int argc, char **argv)
 {
     // Mostrar tela de escolha do tamanho do tabuleiro
     telaInicial(&argc, argv);
     
-    // Captar regiao do clique e gerar tabuleiro (Parte lógica)
+    // Captar regiao do clique e gerar tabuleiro (Parte lógica)w
     // Mostrar tabuleiro
     
     // [Ciclo]

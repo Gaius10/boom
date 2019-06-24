@@ -3,7 +3,7 @@
 
 void init(void)
 {
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.6f, 0.0f, 1.0f);
 }
 
 void telaInicial(int *argc, char **argv)
