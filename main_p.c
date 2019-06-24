@@ -6,15 +6,14 @@
 typedef struct
 {
     int status = 0;
-    int qtdBombas = 0;
-    int **campo = NULL;
-    int **campoVisivel = NULL;
+	int qtdBombas = 0;
+	int **campo = NULL;
+	int **campoVisivel = NULL;
 } Jogo;
 
 int main(int argc, char **argv)
 {
     // Mostrar tela de escolha do tamanho do tabuleiro
-    telaInicial(&argc, argv);
     
     // Captar regiao do clique e gerar tabuleiro (Parte lógica)w
     // Mostrar tabuleiro
