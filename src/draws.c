@@ -1,3 +1,4 @@
+#include "../libs/draws.h"
 #include <GL/glut.h>
 #include <stdio.h>
 

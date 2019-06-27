@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#ifndef LOGICA_H
+#define LOGICA_H
 
 /**
  * Cria tabuleiro de dimensoes w por h
@@ -18,3 +17,5 @@ void play(int x, int y);
  *  Salva ranking num arquivo
  */
 void saveRanking();
+
+#endif

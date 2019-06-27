@@ -1,6 +1,8 @@
-#include <GL/glut.h>
+#include "../libs/gui.h"
 #include "../libs/draws.h"
 #include "../libs/events.h"
+#include <GL/glut.h>
+
 
 void init(void)
 {
