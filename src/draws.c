@@ -43,10 +43,10 @@ void drawTelaInicial(void)
     glVertex2f(0.15f, -0.25f);
     glVertex2f(-0.15f, -0.25f);
 
-    // glVertex2f(-0.15f, -0.15f);
-    // glVertex2f(-0.45f, -0.15f);
-    // glVertex2f(-0.45f, -0.55f);
-    // glVertex2f(-0.15f, -0.55f);
+    glVertex2f(-0.3f, -0.25f);
+    glVertex2f(0.3f, -0.25f);
+    glVertex2f(0.3f, -0.75f);
+    glVertex2f(-0.3f, -0.75f);
 
     glEnd();
 

@@ -7,7 +7,7 @@
  * Planta bombas
  * Conta bombas
  */
-void init(int w, int h);
+void prepare(int w, int h);
 
 /**
  * Registra jogada e atualiza status

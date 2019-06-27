@@ -1,5 +1,6 @@
 #include <GL/glut.h>
 #include "../libs/draws.h"
+#include "../libs/events.h"
 
 void init(void)
 {
@@ -14,6 +15,7 @@ void telaInicial(int *argc, char **argv)
     glutInitWindowPosition(300, 200);
     glutCreateWindow("Boom! - Campo Minado");
     glutDisplayFunc(drawTelaInicial);
+    glutPassiveMotionFunc(mouseMoveTelaInicial);
     init();
     glutMainLoop();
 }
