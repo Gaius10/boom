@@ -1,6 +1,7 @@
 #include "../libs/logica.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void prepare(int w, int h, Jogo *jogo)
 {
@@ -13,7 +14,7 @@ void prepare(int w, int h, Jogo *jogo)
 	{	
 		for(int j=0; j<h; j++)
 		{	
-			campo[i][j]=0;
+			jogo->campo[i][j]=0;
 		}
 	}		
    for(int i=0; i<totBombas; i++)
@@ -22,7 +23,7 @@ void prepare(int w, int h, Jogo *jogo)
 	   int x = rand() % w;
 	   int y = rand() % h;
 
-	   if(campo[x][y]==9)
+	   if(jogo->campo[x][y]==9)
 	   		i--;	
 
 	   jogo->campo[x][y] = 9;
@@ -31,31 +32,31 @@ void prepare(int w, int h, Jogo *jogo)
 	{	
 		for(int j=0; j<h; j++)
 		{	
-			if(campo[i][j] == 9)
+			if(jogo->campo[i][j] == 9)
 			{
-				if(campo[i - 1][j - 1] != 9 && i - 1 >= 0 && j - 1 >= 0)
-					campo[i - 1][j - 1]++;
+				if(jogo->campo[i - 1][j - 1] != 9 && i - 1 >= 0 && j - 1 >= 0)
+					jogo->campo[i - 1][j - 1]++;
 
-				if(campo[i - 1][j + 1] != 9 && i - 1 >= 0 && j + 1 >= 0)
-					campo[i - 1][j + 1]++;
+				if(jogo->campo[i - 1][j + 1] != 9 && i - 1 >= 0 && j + 1 >= 0)
+					jogo->campo[i - 1][j + 1]++;
 
-				if(campo[i - 1][j + 1] != 9 && i - 1 >= 0 && j + 1 >= 0)
-					campo[i - 1][j + 1]++;
+				if(jogo->campo[i - 1][j + 1] != 9 && i - 1 >= 0 && j + 1 >= 0)
+					jogo->campo[i - 1][j + 1]++;
 
-				if(campo[i + 1][j - 1] != 9 && i + 1 >= 0 && j - 1 >= 0)
-					campo[i + 1][j - 1]++;
+				if(jogo->campo[i + 1][j - 1] != 9 && i + 1 >= 0 && j - 1 >= 0)
+					jogo->campo[i + 1][j - 1]++;
 
-				if(campo[i + 1][j + 1] != 9 && i + 1 >= 0 && j + 1 >= 0)
-					campo[i + 1][j + 1]++;
+				if(jogo->campo[i + 1][j + 1] != 9 && i + 1 >= 0 && j + 1 >= 0)
+					jogo->campo[i + 1][j + 1]++;
 
-				if(campo[i + 1][j + 1] != 9 && i + 1 >= 0 && j + 1 >= 0)
-					campo[i + 1][j + 1]++;
+				if(jogo->campo[i + 1][j + 1] != 9 && i + 1 >= 0 && j + 1 >= 0)
+					jogo->campo[i + 1][j + 1]++;
 
-				if(campo[i+1][j-1] != 9 && i + 1 >= 0 && j - 1 >= 0)
-					campo[i + 1][j - 1]++;
+				if(jogo->campo[i+1][j-1] != 9 && i + 1 >= 0 && j - 1 >= 0)
+					jogo->campo[i + 1][j - 1]++;
 
-				if(campo[i+1][j+1] != 9 && i + 1 >= 0 && j + 1 >= 0)
-					campo[i + 1][j + 1]++;
+				if(jogo->campo[i+1][j+1] != 9 && i + 1 >= 0 && j + 1 >= 0)
+					jogo->campo[i + 1][j + 1]++;
 			}
 		}
 	}  

@@ -1,15 +1,7 @@
-#include <stdio.h>
 #include "libs/events.h"
 #include "libs/gui.h"
 #include "libs/logica.h"
 #include "libs/draws.h"
-
-typedef struct {
-    int status;
-    int qtdBombas;
-    int **campo;
-    int **campoVisivel;
-} Jogo;
 
 int main(int argc, char **argv)
 {

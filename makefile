@@ -4,6 +4,7 @@
 FLAGS = -Wall -pedantic -lglut -lGL -lGLU -lm
 
 all: boom
+	rm *.o
 
 boom: main.o draws.o gui.o logica.o events.o
 	gcc -o boom main.o draws.o gui.o logica.o events.o $(FLAGS)
