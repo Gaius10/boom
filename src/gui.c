@@ -2,6 +2,8 @@
 #include "../libs/draws.h"
 #include "../libs/events.h"
 #include <GL/glut.h>
+#include <stdio.h>
+#include <time.h>
 
 void init(void)
 {
@@ -20,8 +22,34 @@ void telaInicial(int *argc, char **argv)
     
     glutDisplayFunc(drawTelaInicial);
     glutPassiveMotionFunc(mouseMoveTelaInicial);
+    glutMouseFunc(clickTelaInicial);
     glutReshapeFunc(resizeTelaInicial);
 
     init();
     glutMainLoop();
+}
+
+void tabuleiro(int w, int h)
+{
+    FILE *logFile;
+
+    switch(w)
+    {
+        case 8:
+            break;
+        case 16:
+            break;
+        case 30:
+            break;
+        default:
+            // Registra erro
+            logFile = fopen("error_logs.txt", "a");
+            time_t date = time(NULL);
+
+            fprintf(logFile,"Falha ao definir tamanho do tabuleiro - %s", 
+                asctime(gmtime(&date)));
+
+            fclose(logFile);
+            break;
+    }
 }

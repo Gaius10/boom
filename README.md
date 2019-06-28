@@ -6,3 +6,5 @@
 	make
 	
 	Pronto!
+
+    Nome padrão para o log de erros: error_logs.txt

@@ -1,18 +1,24 @@
 #ifndef EVENTS_H
 #define EVENTS_H
 
-/**
- * Gerencia movimento do mouse na tela inicial
- */
+
+/* ############################# */
+/* # Movimentos passivos mouse # */
+/* ############################# */
+
 void mouseMoveTelaInicial(int x, int y);
 
 
+/* ########### */
+/* # Cliques # */
+/* ########### */
 
+void clickTelaInicial(int button, int status, int x, int y);
 
+/* ############################### */
+/* # Manter tamanhos das janelas # */
+/* ############################### */
 
-/**
- * Mantém o tamanho da tela inicial em 600x400
- */
 void resizeTelaInicial(int x, int y);
 
 #endif
