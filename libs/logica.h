@@ -3,26 +3,20 @@
 
 typedef struct {
     int status;
-    int qtdBombas;
-    int **campo;
-    int **campoVisivel;
+    int mines;
+    int fieldSize[2];
+    int **field;
+    int **visibleField;
+    char * error;
 } Jogo;
 
-/**
- * Cria tabuleiro de dimensoes w por h
- * Planta bombas
- * Conta bombas
- */
-void prepare(int w, int h, Jogo *jogo);
+/* Configura o campo antes do jogo começar (Define localização das bombas) */
+void setField(Jogo *jogo);
 
-/**
- * Registra jogada e atualiza status
- */
-void play(int x, int y);
+/* Registra próxima jogada e verifica viórias e derrotas */
+void play(int x, int y, Jogo *jogo, int mode);
 
-/**
- *  Salva ranking num arquivo
- */
+/* Registra nomes dos jogadores vencedores */
 void saveRanking();
 
 #endif
