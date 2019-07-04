@@ -32,7 +32,6 @@ int main(int argc, char **argv)
         getNextPlayed(&nextX, &nextY, &jogo, &mode);
         play(nextX, nextY, &jogo, mode);
         showField(&jogo, DEBUG);
-        jogo.status++;
     } while(jogo.status == 0);
     
     // [Em caso de erros]

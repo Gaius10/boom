@@ -16,4 +16,7 @@ void showField(Jogo *jogo, int debug);
 /* Lê próxima jogada */
 void getNextPlayed(int *nextX, int *nextY, Jogo *jogo, int *mode);
 
+/* Mostra lista de vencedores registrados */
+void showRanking();
+
 #endif
